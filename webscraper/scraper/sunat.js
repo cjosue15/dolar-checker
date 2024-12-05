@@ -35,7 +35,6 @@ export const scrapeSunat = async () => {
       sell: parseFloat(sellPrice),
     };
   } catch (error) {
-    console.log(error);
     return {
       success: false,
       buy: 0,
