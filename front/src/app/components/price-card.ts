@@ -20,8 +20,11 @@ import { Exchange } from '../app.component';
           <p>Estamos obteniendo la información...</p>
         }
       </div>
-      <div class="reload" (click)="exchange().reload()">
-        <button>
+      <div class="reload">
+        <button
+          (click)="exchange().reload()"
+          [disabled]="exchange().isLoading()"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"

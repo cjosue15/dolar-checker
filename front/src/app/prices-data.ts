@@ -1,10 +1,10 @@
-const API = 'http://localhost:3000';
+declare const apiKey: string;
 
 export type WEB = 'rextie' | 'sunat' | 'kambista' | 'tkambio';
 
 export const fetchPrice = async (web: WEB) => {
   try {
-    const response = await fetch(`${API}/${web}`);
+    const response = await fetch(`${apiKey}/${web}`);
 
     if (!response.ok) {
       throw new Error('Failed to fetch');
