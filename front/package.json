@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --define \"apiKey='https://dollar-checker-uflv.onrender.com/'\"",
+    "build": "ng build --define \"apiKey='https://dollar-checker-uflv.onrender.com'\"",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
